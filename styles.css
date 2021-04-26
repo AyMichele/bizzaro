@@ -1,0 +1,317 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body > * {
+  width: 102%;
+  box-sizing: border-box;
+}
+
+button {
+  height: 30px;
+  width: 150px;
+  background: rgb(255, 0, 102);
+  color: whitesmoke;
+  border-radius: 10px;
+  offset: 1px white;
+  border: none;
+  cursor: pointer;
+  position: sticky;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background: rgb(140, 26, 255);
+  color: beige;
+  font-weight: bolder;
+  font-size: 15px;
+  justify-content: space-evenly;
+}
+
+.logo-1, .logo-2 {
+  font-size: 30px;
+  width: 120px;
+ 
+}
+.logo-1 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.logo-2{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.credit-con {
+  height: 700px;
+  background-image: url("./assets/happy-woman.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+.con-container > h1 {
+  color: whitesmoke;
+}
+
+.controller {
+  width: 100%;
+  height: 100%;
+  background: rgb(140, 26, 255, .7);
+}
+
+.con-container {
+  width: 70%;
+  height: 100%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 20px;
+}
+
+.slider-container > p {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  outline: none;
+  width: 100%;
+  margin: 5px;
+  height: 7px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(128, 0, 255);
+  border: 3px solid whitesmoke;
+  cursor: pointer;
+}
+
+select {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+.credit-vals-container {
+  width: 70%;
+  display: flex;
+}
+
+.credit-vals-container > div {
+  width: 50%;
+}
+
+.credit-vals-container > div > div {
+  display: flex;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
+}
+
+.credit-vals-container > div > div > p {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.img-con {
+  position: absolute;
+  bottom: -135px;
+  right: 0px;
+}
+
+.img-con > img {
+  width: 110px;
+  height: 110px;
+}
+
+.easy-steps {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.easy-steps div > h1 {
+  color: rgb(140, 26, 255);
+}
+
+.turbo {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-container {
+  display: flex;
+}
+
+.icon-container > div {
+  height: 150px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+.icon-container > div > img {
+  height: 64px;
+  width: 64px;
+}
+
+.icon-container > div > p {
+  display: flex;
+}
+
+.ad-container {
+  display: flex;
+}
+
+.ad-container > div {
+  width: 100%;
+}
+
+.ad-container > div > p {
+  width: 250px;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.order-credit {
+  width: 50%;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.order-credit > p {
+  text-align: left;
+  padding: 20px;
+}
+
+.fast-money > div {
+  margin-bottom: 50px;
+}
+
+.circle-con{
+  margin-left: 100px;
+}
+
+.square-con{
+  margin-right: 100px;
+}
+
+.wrap-text,
+.wrap-text-2 {
+  font-size: 18px;
+  width: 520px;
+}
+
+.wrap-text {
+  text-align: left;
+  padding: 10px;
+}
+
+.wrap-text-2 {
+  text-align: right;
+  width: 500px;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle();
+  border: 25px solid white;
+  position: relative;
+  
+}
+
+.circle > img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  float: right;
+  shape-outside: circle();
+  border: 25px solid white;
+  position: relative;
+}
+
+.square > img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.impressum {
+  width: 101%;
+  height: 300px;
+  border: 1px solid greenyellow;
+  margin-top: 50px;
+}
+
+.impressum {
+  display: flex;
+  justify-content: center;
+  background: rgb(128, 0, 255);
+  color: whitesmoke;
+  margin-top: 100px;
+}
+
+.contact-container {
+  display: flex;
+  align-content: center;
+}
+
+.contact-container > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.link {
+  color: whitesmoke;
+  margin-top: 10px;
+}
