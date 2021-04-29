@@ -4,12 +4,13 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body > * {
-  width: 102%;
+  width: 100%;
   box-sizing: border-box;
+  display: flex;
 }
 
 button {
@@ -18,7 +19,6 @@ button {
   background: rgb(255, 0, 102);
   color: whitesmoke;
   border-radius: 10px;
-  offset: 1px white;
   border: none;
   cursor: pointer;
   position: sticky;
@@ -39,26 +39,29 @@ button:hover {
   justify-content: space-evenly;
 }
 
-.logo-1, .logo-2 {
-  font-size: 30px;
-  width: 120px;
- 
-}
-.logo-1 {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.navbar-mobil {
+  display: none;
 }
 
-.logo-2{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+.logo-1,
+.logo-2 {
+  font-size: 30px;
+  width: 120px;
+}
+.logo-1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo-2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .credit-con {
-  height: 700px;
+  height: inherit;
   background-image: url("./assets/happy-woman.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 .con-container > h1 {
@@ -66,9 +69,10 @@ button:hover {
 }
 
 .controller {
+  display: block;
   width: 100%;
   height: 100%;
-  background: rgb(140, 26, 255, .7);
+  background: rgb(140, 26, 255, 0.7);
 }
 
 .con-container {
@@ -81,6 +85,7 @@ button:hover {
   align-items: center;
   color: whitesmoke;
   font-weight: bolder;
+  margin-bottom: 50px;
 }
 
 .slider-container {
@@ -142,14 +147,19 @@ select {
 }
 
 .img-con {
-  position: absolute;
-  bottom: -135px;
-  right: 0px;
+  width: 200px;
+  height: 150px;
+  display: flex;
+  align-self: flex-end;
+  margin-top: 50px;
+  margin-right: -120px;
 }
 
 .img-con > img {
-  width: 110px;
-  height: 110px;
+  width: 120px;
+  height: 120px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .easy-steps {
@@ -226,11 +236,11 @@ select {
   margin-bottom: 50px;
 }
 
-.circle-con{
+.circle-con {
   margin-left: 100px;
 }
 
-.square-con{
+.square-con {
   margin-right: 100px;
 }
 
@@ -258,14 +268,12 @@ select {
   shape-outside: circle();
   border: 25px solid white;
   position: relative;
-  
 }
 
 .circle > img {
   border-radius: 50%;
   width: 300px;
   height: 300px;
-  
 }
 
 .square {
@@ -314,4 +322,157 @@ select {
 .link {
   color: whitesmoke;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mobil {
+    display: block;
+    height: 50px;
+    align-items: center;
+    background: rgb(140, 26, 255);
+    color: beige;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .logo-con {
+    float: left;
+    margin: 5px;
+    font-size: 18px;
+    width: 75px;
+  }
+
+  .operator {
+    float: right;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+
+  .controller {
+    width: 100%;
+    height: 100%;
+    background: rgb(140, 26, 255, 0.7);
+  }
+
+  .credit-con {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: auto;
+  }
+
+  .con-container {
+    width: 100%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    font-weight: bolder;
+  }
+
+  .slider-container {
+    width: 85%;
+    margin-top: 20px;
+  }
+
+  .credit-vals-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .credit-vals-container > div {
+    width: 90%;
+  }
+
+  .img-con {
+    align-self: center;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .img-con > img {
+    width: 50%;
+    height: 120px;
+  }
+
+  .easy-steps > * > * {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .turbo {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+
+  .ad-container > div > p {
+    width: auto;
+    text-align: center;
+  }
+
+  .order-credit {
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .circle-con,
+  .square-con {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .wrap-text,
+  .wrap-text-2 {
+    font-size: 15px;
+    width: auto;
+    text-align: center;
+  }
+
+  .impressum {
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .contact-container{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+  }
+
+  .contact-container > *{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
