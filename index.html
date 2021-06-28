@@ -3,27 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>CashLift&#10138;</title>
+  <title>SilverStreak&#10138;</title>
   <link rel="stylesheet" href="styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="script.js"></script>
 </head>
-
 <body>
   <nav class="navbar">
     <div class="logo-con">
-      <a class="logo-1">Cash<a><a class="logo-2">Lift &nearhk;</a>
+      <a href="index.html">
+        <button id="logo-butt"></button>
+          <span class="logo-1">Silver</span>
+          <span class="logo-2">Streak&nearhk;</span>
+        </button>
+      </a>
     </div>
-    <a>So funktioniert´s </a>
-    <a>Häufig Fragen</a>
-    <a>Über Uns</a>
+    <a>Standorte</a>
+    <a href="team.html">Unser Team</a>
+    <a href="contact.html">Kontakt</a>
     <a>Hilfe</a>
     <button>Log In</button>
   </nav>
   <nav class="navbar-mobil">
     <div class="logo-con">
-      <a class="logo-1">Cash<a><a class="logo-2">Lift&nearhk;</a>
+      <a href="index.html">
+        <button id="logo-butt"></button>
+          <span class="logo-1">Cash</span>
+          <span class="logo-2">Lift&nearhk;</span>
+        </button>
+      </a>
     </div>
     <a>So funktioniert´s </a>
     <a>Häufig Fragen</a>
@@ -93,30 +102,30 @@
   <div class="easy-steps">
     <div class="turbo">
       <h1>Geld leihen: bis zu 3000 € mit Xpresscredit!</h1>
-      <div class="icon-container">
-        <div>
+      <div data-inviewport="fade-in" class="icon-container">
+        <div id="img1">
           <img src="./assets/choose.png" alt="" />
           <p>Kreditbetrag bis 1000 € und Laufzeit wählen</p>
         </div>
-        <div>
+        <div id="img2">
           <img src="./assets/ident.png" alt="" />
-          <p>Antrag ausfüllen und identifizieren</p>
+          <p>Berater kontaktiere</p>
         </div>
-        <div>
+        <div id="img3">
           <img src="./assets/in-progress.png" alt="" />
           <p>Kreditentscheidung in max. 60 Sekunden</p>
         </div>
-        <div>
+        <div id="img4">
           <img src="./assets/repeat.png" alt="" />
-          <p>Nächster Kredit bis 3000 € per Login</p>
+          <p>Nächster Kredit bis 3000€</p>
         </div>
       </div>
     </div>
     <div class="advantages">
       <h1>Deine Vorteile: Schnell. Günstig. Einfach.</h1>
-      <div class="ad-container">
-        <div>
-          <h1>Schnell</h1>
+      <div  data-inviewport="float-in" class="ad-container">
+        <div id="p-1">
+          <h1 class="h-1" >Schnell</h1>
           <p>
             Von der Antragsstellung über die Kreditentscheidung bis hin zur
             Auszahlung des Kredits geht es sehr schnell: Spätestens 60
@@ -126,8 +135,8 @@
             aus.
           </p>
         </div>
-        <div>
-          <h1>Günstig</h1>
+        <div id="p-2">
+          <h1 class="h-1">Günstig</h1>
           <p>
             Einen Kleinkredit in Höhe von 500 Euro mit einer Laufzeit von 30
             Tagen erhältst Du als Neukunde schon für 4,26 Euro. Am Ende der
@@ -137,8 +146,8 @@
             3000 Euro leihen.
           </p>
         </div>
-        <div>
-          <h1>Einfach</h1>
+        <div id="p-3">
+          <h1 class="h-1">Einfach</h1>
           <p>
             Den Kreditantrag kannst Du ganz bequem online stellen. Eine Kopie
             Deines Personalausweises oder Passes lädst du im Antrag hoch. Wir
@@ -150,7 +159,6 @@
         </div>
       </div>
     </div>
-    <button>Berater Kontaktieren</button>
     <div class="order-credit">
       <h1>Kredit beantragen rund um die Uhr!</h1>
       <p>Eine unerwartete Nachzahlung für Deine Wohnung,
@@ -161,6 +169,15 @@
         Bankfiliale öffnet, das Schlangestehen am Schalter oder das lange Bangen, ob Deine Bank die Kredite überhaupt
         genehmigt. Wenn Du es besonders eilig hast, kannst Du mit dem XpressService innerhalb von 24 Stunden Dein Geld
         bekommen!</p>
+    </div>
+    <div class="make-contract">
+      <div>
+        <h1 id="contract-header">Wir sind für Sie da!</h1> 
+        <div>
+          <button class="contract-button">Kontakieren Sie Uns</button>
+          <a href="team.html"><button  class="contract-button">Unser Team</button></a>
+        </div>
+      </div>
     </div>
     <div class="fast-money">
       <h1>Schnell Geld leihen in 24 Stunden</h1>
@@ -189,7 +206,6 @@
           Kreditantrag prüfen und Dir die Zusage gibt. Geld ausleihen kann so einfach und schnell sein!
          </p>
       </div>
-
     </div>
   </div>
   </div>

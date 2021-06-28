@@ -16,9 +16,9 @@ body > * {
 button {
   height: 30px;
   width: 150px;
-  background: rgb(255, 0, 102);
-  color: whitesmoke;
-  border-radius: 10px;
+  border-radius: 2px;
+  background: rgb(230, 230, 255);
+  color: rgb(0, 0, 77);
   border: none;
   cursor: pointer;
   position: sticky;
@@ -28,11 +28,34 @@ button:hover {
   font-weight: bold;
 }
 
+
+#logo-butt{
+  background: transparent;
+  border: none;
+  color: white;
+  width: auto;
+  height: auto;
+  outline: none;
+
+}
+
+
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
 .navbar {
   display: flex;
   height: 100px;
   align-items: center;
-  background: rgb(140, 26, 255);
+  background: rgb(0, 0, 51);
   color: beige;
   font-weight: bolder;
   font-size: 15px;
@@ -47,6 +70,7 @@ button:hover {
 .logo-2 {
   font-size: 30px;
   width: 120px;
+  color: silver;
 }
 .logo-1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -72,7 +96,7 @@ button:hover {
   display: block;
   width: 100%;
   height: 100%;
-  background: rgb(140, 26, 255, 0.7);
+  background: rgb(0, 0, 77, 0.7);
 }
 
 .con-container {
@@ -116,7 +140,7 @@ button:hover {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: rgb(128, 0, 255);
+  background: rgb(0, 0, 51, 0.9);
   border: 3px solid whitesmoke;
   cursor: pointer;
 }
@@ -167,10 +191,11 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .easy-steps div > h1 {
-  color: rgb(140, 26, 255);
+  color: rgb(0, 0, 51, 0.9);
 }
 
 .turbo {
@@ -195,31 +220,88 @@ select {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 50px;
+  opacity: 0;
+
 }
+
+[data-inviewport="fade-in"].is-inViewport >  #img1 {
+  transition: .6s ease;
+  opacity: 1;
+}
+[data-inviewport="fade-in"].is-inViewport >  #img2 {
+  transition: 1s ease;
+  opacity: 1;
+}
+[data-inviewport="fade-in"].is-inViewport >  #img3 {
+  transition: 1.4s ease;
+  opacity: 1;
+}
+[data-inviewport="fade-in"].is-inViewport >  #img4 {
+  transition: 1.8s ease;
+  opacity: 1;
+}
+
 .icon-container > div > img {
   height: 64px;
   width: 64px;
 }
 
+
 .icon-container > div > p {
   display: flex;
+  
 }
 
-.ad-container {
-  display: flex;
+
+
+[data-inviewport="float-in"].is-inViewport > #p-1 {
+  transition: .6s ease-out;
+  left: 0px;
+}
+[data-inviewport="float-in"].is-inViewport > #p-2 {
+  transition: .6s ease-out;
+  top: 0px;
+}
+[data-inviewport="float-in"].is-inViewport > #p-3 {
+  transition: .6s ease-out;
+  right: 0px;
 }
 
-.ad-container > div {
-  width: 100%;
+.ad-container{
+  width: 950px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+#p-1 {
+  position: relative;
+  float: left;
+  left: -300px;
+}
+#p-2 {
+  position: relative;
+  float: left;
+  top: -400px;
+}
+
+#p-3 {
+  position: relative;
+  float: left;
+  right: -300px;
 }
 
 .ad-container > div > p {
   width: 250px;
+  height: 330px;
   text-align: left;
   padding: 20px;
-  margin: 20px;
   font-size: 18px;
+  border: 2px solid rgb(0, 0, 77);
+  border-radius: 5px;
+  margin: 7px;
 }
+
 
 .order-credit {
   width: 50%;
@@ -230,6 +312,58 @@ select {
 .order-credit > p {
   text-align: left;
   padding: 20px;
+
+}
+
+
+.make-contract {
+  width: 100%;
+  height: 400px;
+  background-image: url("./assets/hands.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid black;
+  margin: 50px 0px 50px 0px;
+  overflow: hidden;
+}
+
+.make-contract:hover > div{
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 77, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 0px;
+  transition: .6s ease-in-out;
+}
+
+
+#contract-header {
+  position: absolute;
+  color: whitesmoke;
+  transform: translate(-50%);
+  top: 0px;
+  left: 50%
+}
+
+.make-contract > div{
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 77, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: -400px;
+  transition: .3s ease-in-out;
+}
+
+.contract-button {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
 }
 
 .fast-money > div {
@@ -295,14 +429,14 @@ select {
 .impressum {
   width: 101%;
   height: 300px;
-  border: 1px solid greenyellow;
+  border: 1px solid white;
   margin-top: 50px;
 }
 
 .impressum {
   display: flex;
   justify-content: center;
-  background: rgb(128, 0, 255);
+  background: rgb(0, 0, 51, 0.9);
   color: whitesmoke;
   margin-top: 100px;
 }
@@ -328,7 +462,7 @@ select {
   .navbar {
     display: none;
   }
-  
+
   body > * {
     text-align: center;
     font-size: 15px;
@@ -338,7 +472,7 @@ select {
     position: fixed;
     display: block;
     height: 50px;
-    background: rgb(140, 26, 255);
+    background: rgb(0, 0, 51, 0.9);
     color: beige;
     font-weight: bolder;
     font-size: 15px;
@@ -355,15 +489,12 @@ select {
     margin-left: 10px;
   }
 
-  
-  .navbar-mobil > button{
+  .navbar-mobil > button {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     width: 75px;
   }
-
-
 
   .logo-con {
     margin: 5px;
@@ -384,7 +515,7 @@ select {
   .controller {
     width: 100%;
     height: 100%;
-    background: rgb(140, 26, 255, 0.7);
+    background: rgb(0, 0, 51, 0.9);
   }
 
   .credit-con {

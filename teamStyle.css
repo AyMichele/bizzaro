@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body > * {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+button {
+  height: 30px;
+  width: 150px;
+  border-radius: 2px;
+  background: rgb(230, 230, 255);
+  color: rgb(0, 0, 77);
+  border: none;
+  cursor: pointer;
+  position: sticky;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+#logo-butt {
+  background: transparent;
+  border: none;
+  color: white;
+  width: auto;
+  height: auto;
+  outline: none;
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background: rgb(0, 0, 51);
+  color: beige;
+  font-weight: bolder;
+  font-size: 15px;
+  justify-content: space-evenly;
+}
+
+.navbar-mobil {
+  display: none;
+}
+
+.logo-1,
+.logo-2 {
+  font-size: 30px;
+  width: 120px;
+  color: silver;
+}
+.logo-1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo-2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#team-container {
+  background-image: url(./assets/komplex.jpg);
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layer {
+  width: 100%;
+  height: auto;
+  background: rgb(0, 0, 77, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member-card {
+  width: 400px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 77);
+  border: 1px solid black;
+  color: white;
+  text-align: left;
+  border-radius: 3px;
+  margin: 20px;
+}
+
+.team-member-card > p {
+  margin: 12px;
+}
+
+
+.team-member-con{
+  display: flex;
+  align-items: center;
+}
+
+.text-con-one  > p{
+ font-size: 50px;
+ margin-right: -100px;
+ margin-left: 50px;
+ color: silver;
+ font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+ border: 1px solid silver;
+ padding: 10px;
+ width: 400px;
+ text-align: center;
+}
+
+.text-con-two  > p{
+  font-size: 50px;
+  margin-left: -550px;
+  color: silver;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid silver;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+ }
+
+ .text-con-three  > p{
+  font-size: 50px;
+  margin-right: -250px;
+  margin-left: 50px;
+  color: silver;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid silver;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+ }
+
+ .text-con-four  > p{
+  font-size: 50px;
+  margin-left: -550px;
+  color: silver;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid silver;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+ }
+
+#one {
+  margin-left: -150px;
+}
+
+#two {
+  margin-right: -300px;
+  margin-top: -50px;
+}
+
+#three {
+  margin-left: -300px;
+  margin-top: -50px;
+}
+
+#four {
+  margin-right: -300px;
+  margin-top: -50px;
+}
+
+.team-image > img {
+  width: 400px;
+  height: 550px;
+  border-radius: 3px;
+
+}
+
+.name-con {
+  display: flex;
+  align-self: center;
+}
+
+.impressum {
+  display: flex;
+  justify-content: center;
+  background: rgb(0, 0, 51, 0.9);
+  color: whitesmoke;
+}
+
+.contact-container {
+  display: flex;
+  align-content: center;
+}
+
+.contact-container > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.link {
+  color: whitesmoke;
+  margin-top: 10px;
+}

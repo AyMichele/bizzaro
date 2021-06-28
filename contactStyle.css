@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body > * {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+button {
+  height: 30px;
+  width: 150px;
+  border-radius: 2px;
+  background: rgb(230, 230, 255);
+  color: rgb(0, 0, 77);
+  border: none;
+  cursor: pointer;
+  position: sticky;
+}
+
+button:hover {
+  font-weight: bold;
+}
+
+#logo-butt {
+  background: transparent;
+  border: none;
+  color: white;
+  width: auto;
+  height: auto;
+  outline: none;
+}
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  background: rgb(0, 0, 51);
+  color: beige;
+  font-weight: bolder;
+  font-size: 15px;
+  justify-content: space-evenly;
+}
+
+.navbar-mobil {
+  display: none;
+}
+
+.logo-1,
+.logo-2 {
+  font-size: 30px;
+  width: 120px;
+  color: silver;
+}
+.logo-1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.logo-2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.form {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  align-self: center;
+}
+
+.form > input {
+  width: 95%;
+  height: 40px;
+  margin: 15px 0px 20px 5px;
+}
+form > label {
+  margin: 0px 0px 0px 5px;
+}
+
+.form > textarea {
+  width: 99%;
+  height: 350px;
+  resize: none;
+  overflow-y: auto;
+}
+
+.impressum {
+  display: flex;
+  justify-content: center;
+  background: rgb(0, 0, 51, 0.9);
+  color: whitesmoke;
+}
+
+.contact-container {
+  display: flex;
+  align-content: center;
+}
+
+.contact-container > div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.link {
+  color: whitesmoke;
+  margin-top: 10px;
+}
