@@ -2,24 +2,13 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>SilverStreak&#10138;</title>
-  <link rel="stylesheet" href="contactStyle.css" />
+  <link rel="stylesheet" href="locationsStyle.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <script src="script.js"></script>
-  <script>
-       window.onload = function () {
-      const text = sessionStorage.getItem('selected');
-      if(text){
-        document.getElementById('text-area').value = text;
-      } else {
-        document.getElementById('text-area').value = ""
-      }
-    }
- 
-  </script>
 </head>
 
 <body>
@@ -34,7 +23,7 @@
     </div>
     <a>Standorte</a>
     <a href="team.html">Unser Team</a>
-    <a>Kontakt</a>
+    <a href="contact.html">Kontakt</a>
     <a>Hilfe</a>
     <button>Log In</button>
   </nav>
@@ -42,8 +31,8 @@
     <div class="logo-con">
       <a href="index.html">
         <button id="logo-butt"></button>
-        <span class="logo-1">Cash</span>
-        <span class="logo-2">Lift&nearhk;</span>
+        <span class="logo-1">Silver</span>
+        <span class="logo-2">Streak&nearhk;</span>
         </button>
       </a>
     </div>
@@ -54,19 +43,42 @@
     <button>Log In</button>
     <div class="operator">&#8801;</div>
   </nav>
-  <form method="POST" class="form" action="https://formsubmit.co/seller.wizz@gmail.com">
-    <label for="vorname">Vorname</label>
-    <input name="vorname" value="" type="text">
-    <label for="nachname">Nachname</label>
-    <input name="nachname" value="" type="text">
-    <label for="email">Email</label>
-    <input name="email" value="" type="email">
-    <label for="nummer">Telefonnummer</label>
-    <input name="nummer" type="text">
-    <label for="text" id=label>Ihr Wunsch</label>
-    <textarea readonly name="text" id="text-area"></textarea>
-    <button type="submit">Abschicken</button>
-  </form>
+
+  <div class="loaction-con">
+
+    <div class="location-card">
+      <div class="image-con" id="img-1">
+        <img src="./assets/frankfurt.jpg" />
+      </div>
+      <div class="text-con" id="text-1">
+        <h3>Neue Mainzer Str. 57-59</h3>
+        <h3>Frankfurt am Main</h3>
+        <h3>60311</h3>
+      </div>
+    </div>
+
+    <div class="location-card">
+      <div class="image-con" id="img-2">
+        <img src="./assets/bruessl.jpg" />
+      </div>
+      <div class="text-con">
+        <h3>Rue du Pont Neuf. 28</h3>
+        <h3>Bruxelles</h3>
+        <h3>1000 </h3>
+      </div>
+    </div>
+
+    <div class="location-card">
+      <div class="image-con" id="img-3">
+        <img src="./assets/moskau.jpg" />
+      </div>
+      <div class="text-con" id="text-3">
+        <h3>Leont'yevskiy Pereulok. 25</h3>
+        <h3>Moscow</h3>
+        <h3>125009</h3>
+      </div>
+    </div>
+  </div>
   <div class="impressum">
     <div class="contact-container">
       <div>

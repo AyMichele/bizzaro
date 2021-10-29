@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,19 +8,21 @@
   <link rel="stylesheet" href="styles.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dinero.js@1.9.0/build/cjs/dinero.min.js"></script>
   <script src="script.js"></script>
 </head>
+
 <body>
   <nav class="navbar">
     <div class="logo-con">
       <a href="index.html">
         <button id="logo-butt"></button>
-          <span class="logo-1">Silver</span>
-          <span class="logo-2">Streak&nearhk;</span>
+        <span class="logo-1">Silver</span>
+        <span class="logo-2">Streak&nearhk;</span>
         </button>
       </a>
     </div>
-    <a>Standorte</a>
+    <a href="locations.html">Standorte</a>
     <a href="team.html">Unser Team</a>
     <a href="contact.html">Kontakt</a>
     <a>Hilfe</a>
@@ -29,8 +32,8 @@
     <div class="logo-con">
       <a href="index.html">
         <button id="logo-butt"></button>
-          <span class="logo-1">Cash</span>
-          <span class="logo-2">Lift&nearhk;</span>
+        <span class="logo-1">Silver</span>
+        <span class="logo-2">Streak&nearhk;</span>
         </button>
       </a>
     </div>
@@ -45,53 +48,47 @@
     <div class="controller">
       <div class="con-container">
         <h1>Turbo Kredit - zuverlässig, schnell und immer für Sie da!</h1>
-      <h5>
-        Bis zu 1000 € und 6 Raten für Neukunden, 3000 € und 6 Raten für
-        Bestandskunden.
-      </h5>
-      <div class="slider-container">
-        <h2>Kreditbetrag</h2>
-        <input type="range" min="50" max="3000" class="slider" value="50" />
-        <p>Laufzeit</p>
-      </div>
-      <select>
-        <option value="1" selected="selected">30 Tage</option>
-        <option value="1" selected="selected">30 Tage</option>
-        <option value="1" selected="selected">30 Tage</option>
-        <option value="1" selected="selected">30 Tage</option>
-        <option value="1" selected="selected">30 Tage</option>
-        <option value="1" selected="selected">30 Tage</option>
-      </select>
-      <div class="credit-vals-container">
-        <div class="credit-vals">
-          <div>
-            <p id="amount">Kreditbetrag:</p>
-            <p id="amount-num">0€</p>
+        <h5>
+          Bis zu 1000 € und 6 Raten für Neukunden, 3000 € und 6 Raten für
+          Bestandskunden.
+        </h5>
+        <div class="slider-container">
+          <h2 id="credit-amount">Kreditbetrag</h2>
+          <input type="range" min="3000" max="50000" class="slider" id="credit-slider" value="3000" step="200" />
+          <p>Laufzeit</p>
+        </div>
+        <div id="running-time">
+          <button id="decrement">-</button>
+          <p id="years">1J.</p>
+          <button id="increment">+</button>
+        </div>
+        <div class="credit-vals-container">
+          <div class="credit-vals">
+            <div>
+              <p id="amount">Kreditbetrag:</p>
+              <p id="amount-num"></p>
+            </div>
+            <div>
+              <p id="interest">eff. Zinssatz:</p>
+              <p id="interest-num">7.3%</p>
+            </div>
+            <div>
+              <p id="rate">Monatliche Rate:</p>
+              <p id="rate-num">€268,25</p>
+            </div>
           </div>
-          <div>
-            <p id="interest">eff. Zinssatz (10.36%):</p>
-            <p id="interest-num">5%</p>
-          </div>
-          <div>
-            <p id="rate">Monatliche Rate:</p>
-            <p id="rate-num">500,50€</p>
+          <div class="credit-time">
+            <div>
+              <p id="time">Kreditlaufzeit:</p>
+              <p id="time-days">1J.</p>
+            </div>
+            <div>
+              <p id="total">Gesamtbetrag:</p>
+              <p id="total-num">3.000,00€</p>
+            </div>
           </div>
         </div>
-        <div class="credit-time">
-          <div>
-            <p id="time">Kreditlaufzeit:</p>
-            <p id="time-days">0 Tage</p>
-          </div>
-          <div>
-            <p id="rate">Raten-Option</p>
-            <p id="rate-option">100€</p>
-          </div>
-          <div>
-            <p id="total">Gesamtbetrag:</p>
-            <p id="total-num">5€</p>
-          </div>
-        </div>
-      </div>
+          <a href="contact.html"><button class="ask-button">Anfragen</button></a>
         <div class="img-con">
           <img src="./assets/ekomi-1.svg" alt="">
           <img src="./assets/ekomi-2.svg" alt="">
@@ -101,11 +98,11 @@
   </div>
   <div class="easy-steps">
     <div class="turbo">
-      <h1>Geld leihen: bis zu 3000 € mit Xpresscredit!</h1>
+      <h1>Geld leihen: bis zu 3000 € mit Sofortkredit!</h1>
       <div data-inviewport="fade-in" class="icon-container">
         <div id="img1">
           <img src="./assets/choose.png" alt="" />
-          <p>Kreditbetrag bis 1000 € und Laufzeit wählen</p>
+          <p>Kreditbetrag ab 3.000€ und Laufzeit wählen</p>
         </div>
         <div id="img2">
           <img src="./assets/ident.png" alt="" />
@@ -117,15 +114,15 @@
         </div>
         <div id="img4">
           <img src="./assets/repeat.png" alt="" />
-          <p>Nächster Kredit bis 3000€</p>
+          <p>Nächster Kredit bis 10.000€</p>
         </div>
       </div>
     </div>
     <div class="advantages">
       <h1>Deine Vorteile: Schnell. Günstig. Einfach.</h1>
-      <div  data-inviewport="float-in" class="ad-container">
+      <div data-inviewport="float-in" class="ad-container">
         <div id="p-1">
-          <h1 class="h-1" >Schnell</h1>
+          <h1 class="h-1">Schnell</h1>
           <p>
             Von der Antragsstellung über die Kreditentscheidung bis hin zur
             Auszahlung des Kredits geht es sehr schnell: Spätestens 60
@@ -172,39 +169,39 @@
     </div>
     <div class="make-contract">
       <div>
-        <h1 id="contract-header">Wir sind für Sie da!</h1> 
+        <h1 id="contract-header">Wir sind für Sie da!</h1>
         <div>
-          <button class="contract-button">Kontakieren Sie Uns</button>
-          <a href="team.html"><button  class="contract-button">Unser Team</button></a>
+          <a href="contact.html"><button class="contract-button">Kontakieren Sie Uns</button></a>
+          <a href="team.html"><button class="contract-button">Unser Team</button></a>
         </div>
       </div>
     </div>
     <div class="fast-money">
       <h1>Schnell Geld leihen in 24 Stunden</h1>
       <div class="circle-con">
-          <div class="circle">
-            <img src="./assets/talking.png" alt="">
-          </div>
-         <p class="wrap-text">Schnell Geld leihen in 24 Stunden
+        <div class="circle">
+          <img src="./assets/talking.png" alt="">
+        </div>
+        <p class="wrap-text">Schnell Geld leihen in 24 Stunden
           Mit dem Geld ist es dringend? Dank XpressService kannst Du das Geld innerhalb von 24 Stunden auf Deinem Konto
           haben. Das erledigst Du in kurzer Zeit in wenigen Schritten: registrieren, Kontaktdaten ausfüllen, bei der
           Antragstellung den XpressService wählen, Kreditantrag unterschreiben und nur einmal identifizieren. Das
           passiert alles online, ohne Papierkram, in wenigen Minuten. Es dauert auch nur eine Minute, bis wir Deinen
           Kreditantrag prüfen und Dir die Zusage gibt. Geld ausleihen kann so einfach und schnell sein!
-         </p>
+        </p>
       </div>
       <h1>Kredite für alle über 18</h1>
-      <div  class="square-con">
-          <div class="square" >
-            <img src="./assets/id-card.jpg" alt="">
-          </div>
-         <p class="wrap-text-2">Schnell Geld leihen in 24 Stunden
+      <div class="square-con">
+        <div class="square">
+          <img src="./assets/id-card.jpg" alt="">
+        </div>
+        <p class="wrap-text-2">Schnell Geld leihen in 24 Stunden
           Mit dem Geld ist es dringend? Dank XpressService kannst Du das Geld innerhalb von 24 Stunden auf Deinem Konto
           haben. Das erledigst Du in kurzer Zeit in wenigen Schritten: registrieren, Kontaktdaten ausfüllen, bei der
           Antragstellung den XpressService wählen, Kreditantrag unterschreiben und nur einmal identifizieren. Das
           passiert alles online, ohne Papierkram, in wenigen Minuten. Es dauert auch nur eine Minute, bis wir Deinen
           Kreditantrag prüfen und Dir die Zusage gibt. Geld ausleihen kann so einfach und schnell sein!
-         </p>
+        </p>
       </div>
     </div>
   </div>
@@ -221,7 +218,7 @@
       <div>
         <h1>Bizzaro Kredite</h1>
         <a class="link" href="">Über uns</a>
-        <a class="link" href="">Impressum</a>
+        <a class="link" href="impressum.html">Impressum</a>
         <a class="link" href="">Datenschutz</a>
       </div>
       <div>
@@ -230,6 +227,6 @@
       </div>
     </div>
   </div>
- </body>
+</body>
 
 </html>

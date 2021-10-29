@@ -95,7 +95,7 @@ a:hover {
 
 .team-member-card {
   width: 400px;
-  height: 700px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   background: rgb(0, 0, 77);
@@ -110,25 +110,24 @@ a:hover {
   margin: 12px;
 }
 
-
-.team-member-con{
+.team-member-con {
   display: flex;
   align-items: center;
 }
 
-.text-con-one  > p{
- font-size: 50px;
- margin-right: -100px;
- margin-left: 50px;
- color: silver;
- font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
- border: 1px solid silver;
- padding: 10px;
- width: 400px;
- text-align: center;
+.text-con-one > p {
+  font-size: 50px;
+  margin-right: -100px;
+  margin-left: 50px;
+  color: silver;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border: 1px solid silver;
+  padding: 10px;
+  width: 400px;
+  text-align: center;
 }
 
-.text-con-two  > p{
+.text-con-two > p {
   font-size: 50px;
   margin-left: -550px;
   color: silver;
@@ -137,9 +136,9 @@ a:hover {
   padding: 10px;
   width: 400px;
   text-align: center;
- }
+}
 
- .text-con-three  > p{
+.text-con-three > p {
   font-size: 50px;
   margin-right: -250px;
   margin-left: 50px;
@@ -149,9 +148,9 @@ a:hover {
   padding: 10px;
   width: 400px;
   text-align: center;
- }
+}
 
- .text-con-four  > p{
+.text-con-four > p {
   font-size: 50px;
   margin-left: -550px;
   color: silver;
@@ -160,7 +159,7 @@ a:hover {
   padding: 10px;
   width: 400px;
   text-align: center;
- }
+}
 
 #one {
   margin-left: -150px;
@@ -185,7 +184,6 @@ a:hover {
   width: 400px;
   height: 550px;
   border-radius: 3px;
-
 }
 
 .name-con {
@@ -215,4 +213,192 @@ a:hover {
 .link {
   color: whitesmoke;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  body > * {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .navbar-mobil {
+    position: fixed;
+    display: block;
+    height: 50px;
+    background: rgb(0, 0, 51, 0.9);
+    color: beige;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .navbar-mobil > a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .navbar-mobil > button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 75px;
+  }
+
+  .logo-1,
+  .logo-2 {
+    font-size: 29px;
+    width: 100px;
+    color: silver;
+    margin-top: 12px;
+    margin-bottom: 15px;
+  }
+
+  .operator {
+    position: absolute;
+    float: right;
+    margin: 5px;
+    font-size: 30px;
+    font-weight: 100;
+    right: 5px;
+  }
+
+  #team-container {
+    background-image: url(./assets/komplex.jpg);
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: centerw;
+  }
+
+  .layer {
+    width: 100%;
+    height: auto;
+    background: rgb(0, 0, 77, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+  }
+
+  .team-member-card {
+    width: 95%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 77);
+    border: 1px solid black;
+    color: white;
+    text-align: left;
+    border-radius: 3px;
+  }
+
+  .team-member-card > p {
+    margin: 10px;
+  }
+
+  .team-member-con {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .text-con-one > p {
+    font-size: 50px;
+    margin: 0px;
+    color: silver;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border: 1px solid silver;
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .text-con-two > p {
+    font-size: 50px;
+    margin: 0px;
+    color: silver;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border: 1px solid silver;
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .text-con-three > p {
+    font-size: 50px;
+    margin: 0px;
+    color: silver;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border: 1px solid silver;
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .text-con-four > p {
+    font-size: 50px;
+    margin: 0px;
+    color: silver;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    border: 1px solid silver;
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #one, #two, #three, #four {
+    margin: 0px;
+
+  }
+
+  .team-image > img {
+    width: 100%;
+    height: 550px;
+    border-radius: 3px;
+  }
+
+  .name-con {
+    display: flex;
+    align-self: center;
+  }
+
+  .impressum {
+    width: auto;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .contact-container {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 300px;
+  }
+
+  .contact-container > * {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

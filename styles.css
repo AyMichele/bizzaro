@@ -28,20 +28,20 @@ button:hover {
   font-weight: bold;
 }
 
-
-#logo-butt{
+#logo-butt {
   background: transparent;
   border: none;
   color: white;
   width: auto;
   height: auto;
   outline: none;
-
+}
+.ask-button {
+  margin-top: 30px;
 }
 
-
-
-a, a:visited {
+a,
+a:visited {
   color: white;
   text-decoration: none;
 }
@@ -49,7 +49,6 @@ a:hover {
   color: white;
   text-decoration: none;
 }
-
 
 .navbar {
   display: flex;
@@ -170,6 +169,19 @@ select {
   padding-right: 5px;
 }
 
+#running-time {
+  margin-top: -60px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#running-time > button {
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+
 .img-con {
   width: 200px;
   height: 150px;
@@ -221,22 +233,21 @@ select {
   margin-right: 10px;
   margin-top: 50px;
   opacity: 0;
-
 }
 
-[data-inviewport="fade-in"].is-inViewport >  #img1 {
-  transition: .6s ease;
+[data-inviewport="fade-in"].is-inViewport > #img1 {
+  transition: 0.6s ease;
   opacity: 1;
 }
-[data-inviewport="fade-in"].is-inViewport >  #img2 {
+[data-inviewport="fade-in"].is-inViewport > #img2 {
   transition: 1s ease;
   opacity: 1;
 }
-[data-inviewport="fade-in"].is-inViewport >  #img3 {
+[data-inviewport="fade-in"].is-inViewport > #img3 {
   transition: 1.4s ease;
   opacity: 1;
 }
-[data-inviewport="fade-in"].is-inViewport >  #img4 {
+[data-inviewport="fade-in"].is-inViewport > #img4 {
   transition: 1.8s ease;
   opacity: 1;
 }
@@ -246,28 +257,24 @@ select {
   width: 64px;
 }
 
-
 .icon-container > div > p {
   display: flex;
-  
 }
 
-
-
 [data-inviewport="float-in"].is-inViewport > #p-1 {
-  transition: .6s ease-out;
+  transition: 0.6s ease-out;
   left: 0px;
 }
 [data-inviewport="float-in"].is-inViewport > #p-2 {
-  transition: .6s ease-out;
+  transition: 0.6s ease-out;
   top: 0px;
 }
 [data-inviewport="float-in"].is-inViewport > #p-3 {
-  transition: .6s ease-out;
+  transition: 0.6s ease-out;
   right: 0px;
 }
 
-.ad-container{
+.ad-container {
   width: 950px;
   height: 500px;
   position: relative;
@@ -302,7 +309,6 @@ select {
   margin: 7px;
 }
 
-
 .order-credit {
   width: 50%;
   font-size: 18px;
@@ -312,9 +318,7 @@ select {
 .order-credit > p {
   text-align: left;
   padding: 20px;
-
 }
-
 
 .make-contract {
   width: 100%;
@@ -327,7 +331,7 @@ select {
   overflow: hidden;
 }
 
-.make-contract:hover > div{
+.make-contract:hover > div {
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 77, 0.8);
@@ -336,19 +340,18 @@ select {
   justify-content: center;
   position: relative;
   bottom: 0px;
-  transition: .6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
-
 
 #contract-header {
   position: absolute;
   color: whitesmoke;
   transform: translate(-50%);
   top: 0px;
-  left: 50%
+  left: 50%;
 }
 
-.make-contract > div{
+.make-contract > div {
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 77, 0.8);
@@ -357,7 +360,7 @@ select {
   justify-content: center;
   position: relative;
   bottom: -400px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .contract-button {
@@ -496,11 +499,13 @@ select {
     width: 75px;
   }
 
-  .logo-con {
-    margin: 5px;
-    height: 50px;
-    font-size: 18px;
-    width: 75px;
+  .logo-1,
+  .logo-2 {
+    font-size: 29px;
+    width: 100px;
+    color: silver;
+    margin-top: 12px;
+    margin-bottom: 15px;
   }
 
   .operator {
@@ -568,11 +573,30 @@ select {
     height: 120px;
   }
 
+  #running-time {
+    margin: 1px;
+  }
+
   .easy-steps > * > * {
     height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .make-contract > div {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 77, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+  }
+
+  .ask-button {
+    margin-top: 30px;
   }
 
   .turbo {
@@ -628,6 +652,18 @@ select {
     flex-direction: column;
     align-items: center;
     margin-bottom: 300px;
+  }
+
+  .make-contract > div {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 77, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0px;
+    transition: 0.3s ease-in-out;
   }
 
   .contact-container > * {
